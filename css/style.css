@@ -1,3 +1,8 @@
+/* =================================== */
+/* 1. Base (Mobile-First) Styles       */
+/* Targets 0px - 767px                 */
+/* =================================== */
+
 :root {
   --black: #000;
   --gray100: #f4f4f4;
@@ -8,8 +13,7 @@
 }
 
 .container {
-  max-width: 1200px;
-  padding-inline: 10px;
+  width: calc(100% - 20px);
   margin: auto;
   font-family: var(--font-family);
   font-weight: 400;
@@ -100,6 +104,10 @@ section {
   margin-block: 40px 37px;
 }
 
+.blog-image {
+  width: 100%;
+}
+
 :first-of-type>.blog-image {
   margin-bottom: 50px;
 }
@@ -150,6 +158,10 @@ section {
   line-height: 166%;
   letter-spacing: 0.05em;
   color: var(--gray700);
+}
+
+.latest-image {
+  width: 100%;
 }
 
 .popular-title {
@@ -211,6 +223,10 @@ section {
   height: 46px;
   display: block;
   margin: auto;
+}
+
+.popular-image {
+  width: 100%;
 }
 
 .promo-personnel {
@@ -287,4 +303,37 @@ section {
 .copyright {
   line-height: 166%;
   letter-spacing: 0.1em;
+}
+
+
+body {
+  font-size: 16px;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.card-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single column for mobile */
+  gap: 1rem;
+}
+
+/* =================================== */
+/* 2. Tablet Breakpoint                */
+/* Targets 768px - 1279px              */
+/* =================================== */
+@media (min-width: 768px) {}
+
+/* =================================== */
+/* 3. Desktop Breakpoint               */
+/* Targets 1280px and up               */
+/* =================================== */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+
+  }
 }
