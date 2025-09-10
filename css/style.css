@@ -1,5 +1,6 @@
 :root {
   --black: #000;
+  --gray100: #f4f4f4;
   --gray500: #7B7B7B;
   --gray700: #565656;
   --font-family: "Lato", sans-serif;
@@ -99,14 +100,191 @@ section {
   margin-block: 40px 37px;
 }
 
-:first-of-type >.blog-image{
+:first-of-type>.blog-image {
   margin-bottom: 50px;
 }
 
 .latest-title {
   font-family: var(--second-family);
-font-weight: 600;
-font-size: 28px;
-line-height: 129%;
-letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 0.05em;
+}
+
+.latest-link {
+  margin-block: 10px 30px;
+  display: block;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: var(--gray500);
+}
+
+.latest-arrow {
+  margin-left: 20px;
+}
+
+.latest-post:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.latest-header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: var(--gray500);
+  margin-block: 25px;
+}
+
+.latest-post-title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.latest-text {
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: var(--gray700);
+}
+
+.popular-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 0.05em;
+}
+
+.popular-link {
+  margin-block: 10px 30px;
+  display: block;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: var(--gray500);
+}
+
+.popular-arrow {
+  margin-left: 20px;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: var(--gray500);
+  margin-block: 25px 15px;
+}
+
+.popular-post {
+  margin-bottom: 50px;
+}
+
+.popular-post-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+.popular-text {
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: var(--gray700);
+}
+
+.popular-button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: var(--gray700);
+  width: 180px;
+  height: 46px;
+  display: block;
+  margin: auto;
+}
+
+.promo-personnel {
+  font-family: var(--second-family);
+  font-size: 24px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+.promo-arrow {
+  margin-block: 7px 32px;
+  display: block;
+}
+
+.promo-text {
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: 0.05em;
+  color: var(--gray700);
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: var(--gray100);
+  margin-inline: -10px;
+  padding: 50px 10px;
+  display: grid;
+  text-align: center;
+}
+
+.footer-title {
+  font-family: var(--second-family);
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+
+.footer-link {
+  font-size: 18px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin-block: 40px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--gray700);
+  transition: 500ms;
+}
+
+:hover>.social-link {
+  background-color: var(--gray700);
+}
+
+.social-icon {
+  transition: 500ms;
+}
+
+:hover>.social-link .social-icon {
+  filter: invert(100%) brightness(200%);
+}
+
+.copyright {
+  line-height: 166%;
+  letter-spacing: 0.1em;
 }

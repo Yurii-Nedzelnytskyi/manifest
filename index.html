@@ -86,66 +86,136 @@
       
       <section class="latest">
         <h2 class="latest-title">Latest Posts</h2>
-        <a href="">View All <img src="images/arrow.svg" alt=""></a>
+        <a class="latest-link" href="">
+          <span>View All</span>
+          <img class="latest-arrow" src="images/arrow.svg" alt="">
+        </a>
 
         <ul>
-          <li>
-            <span>Interface Design</span>
-            <time datetime="2020-06-08">8 June, 2020</time>
-            <h3>UX traffic light colours</h3>
-            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+          <li class="latest-post">
+            <img src="images/lamp.png" alt="lamp" class="latest-image">
+
+            <div class="latest-content">
+              <header class="latest-header">
+                <span>Interface Design</span>
+                <time datetime="2020-06-08">8 June, 2020</time>
+              </header>
+              <h3 class="latest-post-title">UX traffic light colours</h3>
+              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
           </li>
-          <li>
-            <span>Technology</span>
-            <time datetime="2020-05-06">6 May, 2020</time>
-            <h3>Using UX Design to Build a Sustainable Future</h3>
-            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+
+          <li class="latest-post">
+            <img src="images/arrow-left.png" alt="big white arrow on a blue wall" class="latest-image">
+
+            <div class="latest-content">
+              <header class="latest-header">
+                <span>Technology</span>
+                <time datetime="2020-05-06">6 May, 2020</time>
+              </header>
+              <h3 class="latest-post-title">Using UX Design to Build a Sustainable Future</h3>
+              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
           </li>
-          <li>
-            <span>Visual Design</span>
-            <time datetime="2020-06-08">8 June, 2020</time>
-            <h3>Creativity vs. UX</h3>
-            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+
+          <li class="latest-post">
+            <img src="images/roof.png" alt="yellow roof" class="latest-image">
+
+            <div class="latest-content">
+              <header class="latest-header">
+                <span>Visual Design</span>
+                <time datetime="2020-06-08">8 June, 2020</time>
+              </header>
+              <h3 class="latest-post-title">Creativity vs. UX</h3>
+              <p class="latest-text">Is it possible to create a delightful user experience without following best UX practices?</p>
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="popular">
-        <h2>The Most Popular</h2>
-        <a href="">View All</a>
+        <h2 class="popular-title">The Most Popular</h2>
+        <a class="popular-link" href="">
+          <span>View All</span>
+          <img class="popular-arrow" src="images/arrow.svg" alt="">
+        </a>
+
         <ul>
-          <li>
-            <span>Interface Design</span>
-            <time datetime="2020-06-08">8 June, 2020</time>
-            <h3>Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
-            <p>LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and
-              as we learned — diversity and success go hand in hand</p>
+          <li class="popular-post">
+            <img src="images/abstract-egg.png" alt="abstract egg" class="popular-image">
+            
+            <div class="popular-content">
+              <header class="popular-header">
+                <span>Interface Design</span>
+                <time datetime="2020-06-08">8 June, 2020</time>
+              </header>
+
+              <h3 class="popular-post-title">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+              <p class="popular-text">LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and
+                as we learned — diversity and success go hand in hand</p>
+            </div>
           </li>
-          <li>
-            <span>Visual Design</span>
-            <time datetime="2020-06-08">8 June, 2020</time>
-            <h3>Creativity vs. UX</h3>
-            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+          
+          <li class="popular-post">
+            <img src="images/arrow-right.png" alt="arrow pointing to the right on a brick wall" class="popular-image">
+            
+            <div class="popular-content">
+              <header class="popular-header">
+                <span>Visual Design</span>
+                <time datetime="2020-06-08">8 June, 2020</time>
+              </header>
+
+              <h3 class="popular-post-title">Creativity vs. UX</h3>
+              <p class="popular-text">Is it possible to create a delightful user experience without following best UX practices?</p>
+            </div>
           </li>
         </ul>
-        <button>Load More</button>
+
+        <button class="popular-button">Load More</button>
       </section>
 
       <section class="promo">
-        <a href="">
-          Full-time UI/UX designer
-          Head of Design at VeronaLabs.com
+        <a class="promo-personnel" href="">
+          <span>
+            Full-time UI/UX designer
+            Head&nbsp;of&nbsp;Design at VeronaLabs.com
+          </span>
+          <img class="promo-arrow" src="images/arrow.svg" alt="">
         </a>
-        <p>We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
-        <p>We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+        <p class="promo-text">We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
+        <p class="promo-text">We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
       </section>
     </main>
 
     <footer class="footer">
-      <h2>Need a project?</h2>
-      <a href="tel:2395550108">(239) 555-0108</a>
-      <a href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
-      <span>© Copyright Manifest Theme. All rights reserved</span>
+      <h2 class="footer-title">Need a project?</h2>
+      <a class="footer-link" href="tel:2395550108">(239) 555-0108</a>
+      <a class="footer-link" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+
+      <ul class="social">
+        <li>
+          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener">
+            <img class="social-icon" src="images/instagram.svg" alt="instagram logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener">
+            <img class="social-icon" src="images/facebook.svg" alt="facebook logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">
+            <img class="social-icon" src="images/twitter.svg" alt="twitter logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">
+            <img class="social-icon" src="images/linkedin.svg" alt="linkedin logo">
+          </a>
+        </li>
+      </ul>
+
+      <span class="copyright">© Copyright Manifest Theme.<br>All rights reserved</span>
     </footer>
   </div>
 </body>
