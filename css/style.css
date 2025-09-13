@@ -40,7 +40,7 @@
   overflow: hidden;
 }
 
-.navigation {
+.nav-list {
   display: none;
 }
 
@@ -56,7 +56,7 @@ section {
 
 .hero::before {
   content: "";
-  background-image: url(../images/bg-image.png);
+  background-image: url(../images/mobile-bg-image.png);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -82,7 +82,8 @@ section {
   margin-bottom: 50px;
 }
 
-.blog-post-suptitle, .blog-post-date {
+.blog-post-suptitle,
+.blog-post-date {
   line-height: 166%;
   letter-spacing: 0.1em;
   color: var(--gray500);
@@ -325,15 +326,255 @@ body {
 /* 2. Tablet Breakpoint                */
 /* Targets 768px - 1279px              */
 /* =================================== */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+  .container {
+    width: calc(100% - 68px);
+  }
+
+  .header {
+    gap: 40px;
+  }
+
+  .nav {
+    margin-left: auto;
+  }
+
+  .hero {
+    height: 320px;
+    padding-top: 30px;
+  }
+
+  .hero::before {
+  background-image: url(../images/tablet-bg-image.png);
+
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 139%;
+  }
+
+  .blog-title {
+    text-align: left;
+  }
+
+  .blog-post {
+    display: flex;
+    gap: 20px;
+  }
+
+  .blog-post:first-of-type {
+    flex-direction: row-reverse;
+  }
+
+  .blog-image {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+  }
+
+  .latest-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .latest-link {
+    margin: 0;
+  }
+
+  .latest-post {
+    display: flex;
+    gap: 20px;
+  }
+
+  .latest-post:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .latest-post:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .latest-image {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+  }
+
+  .latest-header {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .popular-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .popular-link {
+    margin: 0;
+  }
+
+  .popular-posts {
+    display: flex;
+    gap: 20px;
+  }
+
+  .popular-post {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+  }
+
+  .popular-header {
+    font-size: 12px;
+  }
+
+  .promo-text {
+    text-align: right;
+    max-width: 627px;
+    margin-left: auto;
+  }
+
+  .footer {
+    margin-inline: -34px;
+  }
+
+  .footer-title {
+    font-size: 48px;
+    line-height: 133%;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
 
 /* =================================== */
 /* 3. Desktop Breakpoint               */
 /* Targets 1280px and up               */
 /* =================================== */
 @media (min-width: 1280px) {
+
   .container {
     max-width: 1200px;
+    padding-inline: 15px;
+  }
 
+  .header {
+    gap: 84px;
+    height: 100px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 42px;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  section {
+    margin-bottom: 90px;
+  }
+
+  .hero {
+    height: 600px;
+    position: static;
+    padding-top: 100px;
+  }
+
+  .hero::before {
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 600px;
+  background-image: url(../images/desktop-bg-image.png);
+
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .blog-post {
+    gap: 30px;
+  }
+
+  .blog-content {
+    padding: 85px 120px 85px 0;
+  }
+
+  :last-of-type>.blog-content {
+    padding: 85px 0 85px 120px;
+  }
+
+  .blog-image {
+    height: 470px;
+    width: 570px;
+  }
+
+  .latest-posts {
+    display: flex;
+    gap: 30px;
+  }
+
+  .latest-post {
+    display: unset;
+    width: 370px;
+    
+  }
+
+  .latest-image {
+    width: 100%;
+  }
+
+  .latest-header {
+    margin-top: 25px;
+  }
+
+  .popular-post {
+    gap: 30px;
+  }
+
+  .promo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo-text {
+    width: 470px;
+    text-align: left;
+  }
+
+  .footer {
+    margin-inline: calc(600px - 50vw);
+    text-align: initial;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+  }
+
+  .footer-link {
+    display: block;
+  }
+
+  .copyright {
+    text-align: center;
+
+    br {
+      display: none;
+    }
   }
 }

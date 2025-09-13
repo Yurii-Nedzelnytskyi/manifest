@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@300..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Manifest</title>
@@ -20,8 +22,8 @@
         <h1 class="visually-hidden">Manifest</h1>
       </a>
 
-      <nav>
-        <ul class="navigation">
+      <nav class="nav">
+        <ul class="nav-list">
           <li>
             <a href="">home</a>
           </li>
@@ -58,42 +60,64 @@
         <h2 class="blog-title">Blog</h2>
 
         <div class="blog-post">
-          <span class="blog-post-suptitle">Technology, Interface Design</span>
-          <h3 class="blog-post-title">Using UX Design to Build a Sustainable Future</h3>
-          <time class="blog-post-date" datetime="2020-05-06">6 May, 2020</time>
-          <p class="blog-post-text">
-            <a href="">
-              Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use
-              our influence to drive this.
-            </a>
-          </p>
-          <img class="blog-image" src="images/blog-arrow.png" alt="">
+          <div class="blog-content">
+            <span class="blog-post-suptitle">Technology, Interface Design</span>
+            <h3 class="blog-post-title">Using UX Design to Build a Sustainable Future</h3>
+            <time class="blog-post-date" datetime="2020-05-06">6 May, 2020</time>
+            <p class="blog-post-text">
+              <a href="">
+                Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility
+                to use
+                our influence to drive this.
+              </a>
+            </p>
+          </div>
+
+          <img class="blog-image" srcset="
+          images/mobile-blog1.png 767w,
+          images/tablet-blog1.png 1279w,
+          images/desktop-blog1.png " 
+          src="images/mobile-blog1.png" alt="">
         </div>
 
         <div class="blog-post">
-          <span class="blog-post-suptitle">Technology, Interface Design</span>
-          <h3 class="blog-post-title">Using UX Design to Build a Sustainable Future</h3>
-          <time class="blog-post-date" datetime="2020-05-06">6 May, 2020</time>
-          <p class="blog-post-text">
-            <a href="">
-              Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use
-              our influence to drive this.
-            </a>
-          </p>
-          <img class="blog-image" src="images/blog-post2.png" alt="">
+          <div class="blog-content">
+            <span class="blog-post-suptitle">Technology, Interface Design</span>
+            <h3 class="blog-post-title">Using UX Design to Build a Sustainable Future</h3>
+            <time class="blog-post-date" datetime="2020-05-06">6 May, 2020</time>
+            <p class="blog-post-text">
+              <a href="">
+                Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility
+                to use
+                our influence to drive this.
+              </a>
+            </p>
+          </div>
+
+          <img class="blog-image" srcset="
+          images/mobile-blog2.png 767w,
+          images/tablet-blog2.png 1279w,
+          images/desktop-blog2.png " 
+          src="images/mobile-blog2.png"  alt="">
         </div>
       </section>
-      
-      <section class="latest">
-        <h2 class="latest-title">Latest Posts</h2>
-        <a class="latest-link" href="">
-          <span>View All</span>
-          <img class="latest-arrow" src="images/arrow.svg" alt="">
-        </a>
 
-        <ul>
+      <section class="latest">
+        <hgroup class="latest-heading">
+          <h2 class="latest-title">Latest Posts</h2>
+          <a class="latest-link" href="">
+            <span>View All</span>
+            <img class="latest-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </hgroup>
+
+        <ul class="latest-posts">
           <li class="latest-post">
-            <img src="images/lamp.png" alt="lamp" class="latest-image">
+            <img srcset="
+          images/mobile-latest1.png 767w,
+          images/tablet-latest1.png 1279w,
+          images/desktop-latest1.png " 
+          src="images/mobile-latest1.png"  alt="lamp" class="latest-image">
 
             <div class="latest-content">
               <header class="latest-header">
@@ -101,12 +125,17 @@
                 <time datetime="2020-06-08">8 June, 2020</time>
               </header>
               <h3 class="latest-post-title">UX traffic light colours</h3>
-              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.</p>
+              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.
+              </p>
             </div>
           </li>
 
           <li class="latest-post">
-            <img src="images/arrow-left.png" alt="big white arrow on a blue wall" class="latest-image">
+            <img srcset="
+          images/mobile-latest2.png 767w,
+          images/tablet-latest2.png 1279w,
+          images/desktop-latest2.png " 
+          src="images/mobile-latest2.png"  alt="big white arrow on a blue wall" class="latest-image">
 
             <div class="latest-content">
               <header class="latest-header">
@@ -114,12 +143,17 @@
                 <time datetime="2020-05-06">6 May, 2020</time>
               </header>
               <h3 class="latest-post-title">Using UX Design to Build a Sustainable Future</h3>
-              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.</p>
+              <p class="latest-text">UI has to make a huge visual difference between warning, an alert and a success.
+              </p>
             </div>
           </li>
 
           <li class="latest-post">
-            <img src="images/roof.png" alt="yellow roof" class="latest-image">
+            <img srcset="
+          images/mobile-latest3.png 767w,
+          images/tablet-latest3.png 1279w,
+          images/desktop-latest3.png " 
+          src="images/mobile-latest3.png"  alt="yellow roof" class="latest-image">
 
             <div class="latest-content">
               <header class="latest-header">
@@ -127,23 +161,30 @@
                 <time datetime="2020-06-08">8 June, 2020</time>
               </header>
               <h3 class="latest-post-title">Creativity vs. UX</h3>
-              <p class="latest-text">Is it possible to create a delightful user experience without following best UX practices?</p>
+              <p class="latest-text">Is it possible to create a delightful user experience without following best UX
+                practices?</p>
             </div>
           </li>
         </ul>
       </section>
 
       <section class="popular">
-        <h2 class="popular-title">The Most Popular</h2>
-        <a class="popular-link" href="">
-          <span>View All</span>
-          <img class="popular-arrow" src="images/arrow.svg" alt="">
-        </a>
+        <hgroup class="popular-heading">
+          <h2 class="popular-title">The Most Popular</h2>
+          <a class="popular-link" href="">
+            <span>View All</span>
+            <img class="popular-arrow" src="images/arrow.svg" alt="">
+          </a>
+        </hgroup>
 
-        <ul>
+        <ul class="popular-posts">
           <li class="popular-post">
-            <img src="images/abstract-egg.png" alt="abstract egg" class="popular-image">
-            
+            <img srcset="
+          images/mobile-popular1.png 767w,
+          images/tablet-popular1.png 1279w,
+          images/desktop-popular1.png " 
+          src="images/mobile-popular1.png"  alt="abstract egg" class="popular-image">
+
             <div class="popular-content">
               <header class="popular-header">
                 <span>Interface Design</span>
@@ -151,14 +192,19 @@
               </header>
 
               <h3 class="popular-post-title">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
-              <p class="popular-text">LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and
+              <p class="popular-text">LinkedIn is on a clear mission to make professionals more successful by connecting
+                the global workforce and
                 as we learned — diversity and success go hand in hand</p>
             </div>
           </li>
-          
+
           <li class="popular-post">
-            <img src="images/arrow-right.png" alt="arrow pointing to the right on a brick wall" class="popular-image">
-            
+            <img srcset="
+          images/mobile-popular2.png 767w,
+          images/tablet-popular2.png 1279w,
+          images/desktop-popular2.png " 
+          src="images/mobile-popular2.png"  alt="arrow pointing to the right on a brick wall" class="popular-image">
+
             <div class="popular-content">
               <header class="popular-header">
                 <span>Visual Design</span>
@@ -166,7 +212,8 @@
               </header>
 
               <h3 class="popular-post-title">Creativity vs. UX</h3>
-              <p class="popular-text">Is it possible to create a delightful user experience without following best UX practices?</p>
+              <p class="popular-text">Is it possible to create a delightful user experience without following best UX
+                practices?</p>
             </div>
           </li>
         </ul>
@@ -177,43 +224,54 @@
       <section class="promo">
         <a class="promo-personnel" href="">
           <span>
-            Full-time UI/UX designer
+            Full-time UI/UX designer <br>
             Head&nbsp;of&nbsp;Design at VeronaLabs.com
           </span>
           <img class="promo-arrow" src="images/arrow.svg" alt="">
         </a>
-        <p class="promo-text">We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
-        <p class="promo-text">We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+
+        <div>
+          <p class="promo-text">We work with clients around the world from our headquarters in Charleston, South
+            Carolina.
+          </p>
+          <p class="promo-text">We focus on naming, branding, brand narratives, website design and development, and
+            brand
+            experiences.</p>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <h2 class="footer-title">Need a project?</h2>
-      <a class="footer-link" href="tel:2395550108">(239) 555-0108</a>
-      <a class="footer-link" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+      <div class="footer-content">
+        <div>
+          <h2 class="footer-title">Need a project?</h2>
+          <a class="footer-link" href="tel:2395550108">(239) 555-0108</a>
+          <a class="footer-link" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a>
+        </div>
 
-      <ul class="social">
-        <li>
-          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener">
-            <img class="social-icon" src="images/instagram.svg" alt="instagram logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener">
-            <img class="social-icon" src="images/facebook.svg" alt="facebook logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">
-            <img class="social-icon" src="images/twitter.svg" alt="twitter logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">
-            <img class="social-icon" src="images/linkedin.svg" alt="linkedin logo">
-          </a>
-        </li>
-      </ul>
+        <ul class="social">
+          <li>
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener">
+              <img class="social-icon" src="images/instagram.svg" alt="instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener">
+              <img class="social-icon" src="images/facebook.svg" alt="facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">
+              <img class="social-icon" src="images/twitter.svg" alt="twitter logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">
+              <img class="social-icon" src="images/linkedin.svg" alt="linkedin logo">
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <span class="copyright">© Copyright Manifest Theme.<br>All rights reserved</span>
     </footer>
